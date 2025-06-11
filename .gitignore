@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# Virtual env
+venv/
+env/
+
+# IDE config files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
+# Env file (maxfiy narsa!)
+.env
+
+# Media files (agar user yuklagan fayllar bo‘lsa)
+media/

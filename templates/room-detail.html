@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+{% extends 'layouts/base.html' %}
+<html lang="en">
+{% load static %}
+{% block content %}
+<!-- Mirrored from spacingtech.com/html/hotel/hotel-ltr/room-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Feb 2025 14:17:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+		<!-- breadcrumb start -->
+		<section class="breadcrumb-area section-tb-padding" style="background-image: url('{% static 'image/breadcrumb.jpg' %}');">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="breadcrumb-block">
+							<div class="breadcrumb-link">
+								<a href="index.html" class="link">Home</a>
+								<span class="page-title">Roomdetails</span>
+							</div>
+							<div class="section-capture">
+								<div class="section-title">
+									<h2>
+										<span>Room details</span>
+									</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- breadcrumb end -->
+		<!-- store content start -->
+		<main id="demo-content">
+			<!-- details start -->
+			<section class="details-area section-tb-padding">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="details-image">
+								<div class="swiper" id="details-slider">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="details-image">
+												<a href="javascript:void(0)" class="image small-opacity">
+													<img src="{{ rooms.image.url }}" class="img-fluid" alt="image">
+												</a>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="info-block">
+								<div class="details-info">
+									<div class="info-content">
+										<div class="title-review">
+											<h4 class="title">{{ rooms.name }}</h4>
+											<span class="review">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</span>
+										</div>
+										<div class="description">
+											<p class="desc">{{ rooms.description }}</p>
+										</div>
+										<ul class="details-tag-ul">
+											<li class="details-tag-li">
+												<a href="javascript:void(0)" class="tag-link">{{ rooms.bedrooms }} Beds</a>
+											</li>
+											<li class="details-tag-li">
+												<a href="javascript:void(0)" class="tag-link">{{ rooms.bathrooms }} Bathroom</a>
+											</li>
+											<li class="details-tag-li">
+												<a href="javascript:void(0)" class="tag-link">{{ rooms.balcony }}</a>
+											</li>
+										</ul>
+										<h4 class="details-price">
+											<span class="price">{{ rooms.price_per_night }}$</span>
+											<span class="label">/ night</span>
+										</h4>
+									</div>
+									<div class="details-service">
+										<h4 class="service-title">Room facilities</h4>
+										<div class="service-block">
+											<ul class="service-ul">
+                                                {% for t in teg %}
+												<li class="service-li">
+													<div class="service-icon">
+														<span class="title">{{ t.name }}</span>
+													</div>
+												</li>
+                                                {% endfor %}
+											</ul>
+										</div>
+										<div class="service-btn">
+											<a href="javascript:void(0)" class="btn-style">Check now</a>
+										</div>
+									</div>
+								</div>
+								<div class="details-feature">
+									<div class="feature-block">
+										<h4 class="feature-title">Hours</h4>
+										<div class="content-text">
+											<ul class="feature-ul">
+												<li class="feature-li">
+													<div class="icon-block">
+														<span class="icon"><i class="feather-clock"></i></span>
+													</div>
+													<div class="text-block">
+														<div class="label">
+															<p>Breakfast: </p>
+														</div>
+														<div class="input-text">
+															<p> 7.00 am – 11.00 am (daily)</p>
+														</div>
+													</div>
+												</li>
+												<li class="feature-li">
+													<div class="icon-block">
+														<span class="icon"><i class="feather-clock"></i></span>
+													</div>
+													<div class="text-block">
+														<div class="label">
+															<p>Lunch: </p>
+														</div>
+														<div class="input-text">
+															<p> 12.00 noon – 2.00 pm (daily)</p>
+														</div>
+													</div>
+												</li>
+												<li class="feature-li">
+													<div class="icon-block">
+														<span class="icon"><i class="feather-clock"></i></span>
+													</div>
+													<div class="text-block">
+														<div class="label">
+															<p>Dinner: </p>
+														</div>
+														<div class="input-text">
+															<p> open from 6.30 pm,</p>
+															<p>last order at 10.00 pm (daily)</p>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="feature-block">
+										<h4 class="feature-title">Dress code</h4>
+										<div class="content-text">
+											<p>Smart casual (no shorts & sandals permitted)</p>
+										</div>
+									</div>
+									<div class="feature-block">
+										<h4 class="feature-title">Terrace</h4>
+										<div class="content-text">
+											<p>Open for drinks only</p>
+										</div>
+									</div>
+									<div class="feature-block">
+										<h4 class="feature-title">Room rules</h4>
+										<div class="content-text">
+											<p>Checkin: after 2:00 PM</p>
+											<p>Check-out: 11:00 AM</p>
+											<p>Self-check-in with lockbox</p>
+											<p>No smoking</p>
+											<p>Pets are allowed</p>
+										</div>
+									</div>
+								</div>
+
+							</div>
+                                                    			<section class="date-selector section-t-padding" id="down-section">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="selector-area">
+								<ul class="selector-ul">
+									<li class="selector-li date-selector wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
+
+
+                                        <form method="POST">
+                                            {% csrf_token %}
+										<div class="selector-block">
+											<label>Check in</label>
+											<div class="date-select-wrap">
+												<input type="date" name="check_in" id="datepicker2">
+											</div>
+										</div>
+									</li>
+									<li class="selector-li date-selector wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
+										<div class="selector-block">
+											<label>Check out</label>
+											<div class="date-select-wrap">
+												<input type="date" name="check_out" id="datepicker1">
+											</div>
+										</div>
+									</li>
+								<ul class="selector-submit wow animate__animated animate__fadeIn" data-wow-delay="0.4s">
+									<li class="submit-block">
+										<div class="selector-block">
+											<div class="selector-title">
+												<span class="icon"><i class="feather-calendar"></i></span>
+												<span class="title">Get in touch</span>
+											</div>
+                                            {% if error_message %}
+                                                <div class="error">
+                                                    <p>{{ error_message }}</p>
+                                                </div>
+                                            {% endif %}
+											<div class="selector-button">
+												<button type="submit" class="btn-style3">Book now</button>
+											</div>
+                                            </form>
+
+
+
+
+										</div>
+									</li>
+								</ul>
+
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- details end -->
+			<!-- blog start -->
+			<section class="blog-area section-bg section-tb-padding">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="section-capture">
+								<div class="section-title">
+									<span class="subtitle">Luxury hotel for the tempa</span>
+									<h2>
+										<span> Similar rooms we are</span>
+										<span>best in the hotel town</span>
+									</h2>
+								</div>
+							</div>
+							<div class="swiper" id="blog-slider">
+								<div class="swiper-wrapper">
+                                    {% for room in room %}
+									<div class="swiper-slide wow animate__animated animate__zoomIn" data-wow-delay="0.1s">
+										<div class="room-item">
+											<div class="room-image">
+												<a href="/room_d/?rom_id={{ room.id }}" class="image small-opacity">
+													<img src="{{ room.image.url }}" class="img-fluid" alt="room-image">
+												</a>
+											</div>
+											<div class="room-content">
+												<h4 class="title">
+													<a href="/room_d/?rom_id={{ room.id }}" class="title">{{ room.name }}</a>
+												</h4>
+												<p class="desc">{{ r.description }}</p>
+												<div class="room-tag">
+													<a href="/room_d/?rom_id={{ room.id }}" class="tag">{{ room.bedrooms }} Beds</a>
+													<a href="/room_d/?rom_id={{ room.id }}" class="tag">{{ room.bathrooms }} Bathroom</a>
+													<a href="/room_d/?rom_id={{ room.id }}" class="tag">{{ room.balcony }}</a>
+												</div>
+												<div class="button-price">
+													<a href="/room_d/?rom={{ room.id }}" class="room-btn btn-style3">See detail</a>
+													<h5 class="price">${{ room.price_per_night }} <span>/ night</span> </h5>
+												</div>
+											</div>
+										</div>
+									</div>
+                                    {% endfor %}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- blog end -->
+			<!-- date selector start -->
+			<section class="date-selector section-t-padding">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- date selector end -->
+			<!-- testimonial start -->
+			<section class="testimonial-area section-tb-padding">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="section-capture">
+								<div class="section-title">
+									<span class="subtitle">200+ Positive clients reviews</span>
+									<h2>
+										<span>Our latest customer</span>
+										<span>love for hotel reviews</span>
+									</h2>
+								</div>
+							</div>
+							<div class="swiper" id="testimonial-slider">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide wow animate__animated animate__zoomIn" data-wow-delay="0.1s">
+										<div class="testimonial-block">
+											<div class="testimonial-icon">
+												<img src="{% static 'image/home-1/test-icon.png' %}" class="img-fluid" alt="image">
+											</div>
+											<div class="testimonial-content">
+												<p class="desc">There are many variations of passages of but the majority have suffered alteration a by injected humour, or randomised.</p>
+												<div class="testi-author">
+													<div class="image">
+														<img src="{% static 'image/home-1/test-1.png' %}" class="img-fluid" alt="image">
+													</div>
+													<div class="author">
+														<span class="author-name">Aida bugg</span>
+														<span class="author-bio">Store customer</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide wow animate__animated animate__zoomIn" data-wow-delay="0.2s">
+										<div class="testimonial-block">
+											<div class="testimonial-icon">
+												<img src="{% static 'image/home-1/test-icon.png' %}" class="img-fluid" alt="image">
+											</div>
+											<div class="testimonial-content">
+												<p class="desc">There are many variations of passages of but the majority have suffered alteration a by injected humour, or randomised.</p>
+												<div class="testi-author">
+													<div class="image">
+														<img src="{% static 'image/home-1/test-2.png' %}" class="img-fluid" alt="image">
+													</div>
+													<div class="author">
+														<span class="author-name">Del phineum</span>
+														<span class="author-bio">Store owner</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide wow animate__animated animate__zoomIn" data-wow-delay="0.3s">
+										<div class="testimonial-block">
+											<div class="testimonial-icon">
+												<img src="{% static 'image/home-1/test-icon.png' %}" class="img-fluid" alt="image">
+											</div>
+											<div class="testimonial-content">
+												<p class="desc">There are many variations of passages of but the majority have suffered alteration a by injected humour, or randomised.</p>
+												<div class="testi-author">
+													<div class="image">
+														<img src="{% static 'image/home-1/test-3.png' %}" class="img-fluid" alt="image">
+													</div>
+													<div class="author">
+														<span class="author-name">Percy kewshun</span>
+														<span class="author-bio">Store customer</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide wow animate__animated animate__zoomIn" data-wow-delay="0.4s">
+										<div class="testimonial-block">
+											<div class="testimonial-icon">
+												<img src="{% static 'image/home-1/test-icon.png' %}" class="img-fluid" alt="image">
+											</div>
+											<div class="testimonial-content">
+												<p class="desc">There are many variations of passages of but the majority have suffered alteration a by injected humour, or randomised.</p>
+												<div class="testi-author">
+													<div class="image">
+														<img src="{% static 'image/home-1/test-4.png' %}" class="img-fluid" alt="image">
+													</div>
+													<div class="author">
+														<span class="author-name">Aida bugg</span>
+														<span class="author-bio">Store customer</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- testimonial end -->
+		</main>
+		<!-- store content end -->
+</html>
+{% endblock %}

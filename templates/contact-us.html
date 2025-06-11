@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+{% extends 'layouts/base.html' %}
+<html lang="en">
+{% load static %}
+{% block content %}
+	
+<!-- Mirrored from spacingtech.com/html/hotel/hotel-ltr/contact-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Feb 2025 14:17:36 GMT -->
+
+		<!-- header end -->
+		<!-- breadcrumb start -->
+		<section class="breadcrumb-area section-tb-padding" style="background-image: url('{% static 'image/breadcrumb.jpg' %}');">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="breadcrumb-block">
+							<div class="breadcrumb-link">
+								<a href="index.html" class="link">Home</a>
+								<span class="page-title">Contact us</span>
+							</div>
+							<div class="section-capture">
+								<div class="section-title">
+									<h2>
+										<span>Contact us</span>
+									</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- breadcrumb end -->
+		<!-- store content start -->
+		<main id="demo-1-content">
+			<!-- contact input start -->
+			<section class="contact-input-area section-tb-padding">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="section-capture wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
+								<div class="section-title">
+									<span class="subtitle">Stay touch with us</span>
+									<h2>
+										<span>Quick a support</span>
+									</h2>
+								</div>
+							</div>
+							<div class="contact-input-block">
+								<form method="post">
+                                    {% csrf_token %}
+									<ul class="contact-input-ul">
+										<li class="contact-input-li wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
+											<input type="text" name="name" class="input-full" placeholder="Enter your full name" autocomplete="off">
+											<input type="text" name="email" class="input-full" placeholder="Enter your email address" autocomplete="off">
+										</li>
+										<li class="contact-input-li wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
+											<input type="text" name="number" class="input-full" placeholder="Enter your mobile number" autocomplete="off">
+											<input type="text" name="subject" class="input-full" placeholder="Select your subject" autocomplete="off">
+										</li>
+										<li class="contact-input-li wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
+											<textarea name="message" class="text-area" placeholder="Enter your massage" autocomplete="off" rows="7"></textarea>
+										</li>
+									</ul>
+									<div class="contact-info-submit wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
+										<div class="submit-btn">
+											<button href="/contact/" type="submit" class="btn-style5 agree disabled">Send massage</button>
+										</div>
+										<div class="info-agree">
+											<label class="box-area">
+												<span class="agree-text">I accept the terms & conditions and i understand that my data will be hold securely in accordance with the policy.</span>
+												<input type="checkbox" class="cust-checkbox">
+												<span class="cust-check"></span>
+							                </label>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- contact input end -->
+			<!-- contact info start -->
+			<section class="contact-info-area section-tb-padding">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="contact-info-block">
+								<div class="contact-info">
+									<ul class="contact-info-ul">
+										<li class="contact-info-li wow animate__slideInUp animate__animated" data-wow-delay="0.1s">
+											<div class="contact-info-main">
+												<div class="info-icon">
+													<a href="javascript:void(0)" class="icon-block">
+														<span class="icon"><i class="feather-home"></i></span>
+													</a>
+												</div>
+												<div class="info-text">
+													<div class="title-block">
+														<span class="title">Office address</span>
+													</div>
+													<div class="info-block">
+														<p>Uzbekistan, Tashkent, Olmazor, Qoraqamish2/4, 37/31</p>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="contact-info-li wow animate__slideInUp animate__animated" data-wow-delay="0.2s">
+											<div class="contact-info-main">
+												<div class="info-icon">
+													<a href="javascript:void(0)" class="icon-block">
+														<span class="icon"><i class="feather-phone-call"></i></span>
+													</a>
+												</div>
+												<div class="info-text">
+													<div class="title-block">
+														<span class="title">Phone number</span>
+													</div>
+													<div class="info-block">
+														<a href="tel:+998903995955" class="info-link">+998 (90) 399 59 55</a>
+														<a href="tel:+998903995955" class="info-link">+998 (90) 399 59 55</a>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="contact-info-li wow animate__slideInUp animate__animated" data-wow-delay="0.3s">
+											<div class="contact-info-main">
+												<div class="info-icon">
+													<a href="javascript:void(0)" class="icon-block">
+														<span class="icon"><i class="feather-mail"></i></span>
+													</a>
+												</div>
+												<div class="info-text">
+													<div class="title-block">
+														<span class="title">Email address</span>
+													</div>
+													<div class="info-block">
+														<a href="abdulazizy414@gmail.com" class="info-link">abdulazizy414@gmail.com</a>
+														<a href="abdulazizy5955@icloud.com" class="info-link">abdulazizy5955@icloud.com</a>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="contact-map wow animate__slideInUp animate__animated" data-wow-delay="0.3s">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.049461595532!2d69.23198207640152!3d41.36608837129169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8942c9b2a39f%3A0x3e377bf79cdab59!2sQoraqamish%202%2F4%2C%20Tashkent%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1707438594612" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- contact info end -->
+			<!-- date selector start -->
+			<!-- date selector end -->
+			<!-- testimonial start -->
+			<section class="testimonial-area section-tb-padding">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="section-capture">
+								<div class="section-title">
+									<span class="subtitle">200+ Positive clients reviews</span>
+									<h2>
+										<span>Our latest customer</span>
+										<span>love for hotel reviews</span>
+									</h2>
+								</div>
+							</div>
+							<div class="swiper" id="testimonial-slider">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide wow animate__animated animate__zoomIn" data-wow-delay="0.1s">
+										<div class="testimonial-block">
+											<div class="testimonial-icon">
+												<img src="{% static 'image/home-1/test-icon.png' %}" class="img-fluid" alt="image">
+											</div>
+											<div class="testimonial-content">
+												<p class="desc">There are many variations of passages of but the majority have suffered alteration a by injected humour, or randomised.</p>
+												<div class="testi-author">
+													<div class="image">
+														<img src="{% static 'image/home-1/test-1.png' %}" class="img-fluid" alt="image">
+													</div>
+													<div class="author">
+														<span class="author-name">Aida bugg</span>
+														<span class="author-bio">Store customer</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide wow animate__animated animate__zoomIn" data-wow-delay="0.2s">
+										<div class="testimonial-block">
+											<div class="testimonial-icon">
+												<img src="{% static 'image/home-1/test-icon.png' %}" class="img-fluid" alt="image">
+											</div>
+											<div class="testimonial-content">
+												<p class="desc">There are many variations of passages of but the majority have suffered alteration a by injected humour, or randomised.</p>
+												<div class="testi-author">
+													<div class="image">
+														<img src="{% static 'image/home-1/test-2.png' %}" class="img-fluid" alt="image">
+													</div>
+													<div class="author">
+														<span class="author-name">Del phineum</span>
+														<span class="author-bio">Store owner</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide wow animate__animated animate__zoomIn" data-wow-delay="0.3s">
+										<div class="testimonial-block">
+											<div class="testimonial-icon">
+												<img src="{% static 'image/home-1/test-icon.png' %}" class="img-fluid" alt="image">
+											</div>
+											<div class="testimonial-content">
+												<p class="desc">There are many variations of passages of but the majority have suffered alteration a by injected humour, or randomised.</p>
+												<div class="testi-author">
+													<div class="image">
+														<img src="{% static 'image/home-1/test-3.png' %}" class="img-fluid" alt="image">
+													</div>
+													<div class="author">
+														<span class="author-name">Percy kewshun</span>
+														<span class="author-bio">Store customer</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide wow animate__animated animate__zoomIn" data-wow-delay="0.4s">
+										<div class="testimonial-block">
+											<div class="testimonial-icon">
+												<img src="{% static 'image/home-1/test-icon.png' %}" class="img-fluid" alt="image">
+											</div>
+											<div class="testimonial-content">
+												<p class="desc">There are many variations of passages of but the majority have suffered alteration a by injected humour, or randomised.</p>
+												<div class="testi-author">
+													<div class="image">
+														<img src="{% static 'image/home-1/test-4.png' %}" class="img-fluid" alt="image">
+													</div>
+													<div class="author">
+														<span class="author-name">Aida bugg</span>
+														<span class="author-bio">Store customer</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- testimonial end -->
+		</main>
+		<!-- store content end -->
+</html>
+{% endblock %}

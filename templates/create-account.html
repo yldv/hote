@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+{% extends 'layouts/base.html' %}
+
+{% load static %}
+<html lang="en">
+	{% block content %}
+<!-- Mirrored from spacingtech.com/html/hotel/hotel-ltr/create-account.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Feb 2025 14:14:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="spacingtech_webify">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- title -->
+        <title>Tempa - The luxury hotel HTML5 template</title>
+        <!-- favicon -->
+        <link rel="icon" type="image/x-icon" href="{%  static 'image/favicon/favicon.png' %}">
+        <!-- bootstrap css -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css' %}">
+        <!-- fontawesome css -->
+        <link rel="stylesheet" type="text/css" href="{%  static 'css/all.min.css' %}">
+        <!-- feather css -->
+        <link rel="stylesheet" type="text/css" href="{%  static 'css/feather.css' %}">
+        <!-- animate css -->
+        <link rel="stylesheet" type="text/css" href="{%  static 'css/animate.min.css' %}">
+        <!-- owl-carousel css -->
+        <link rel="stylesheet" type="text/css" href="{%  static 'css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{%  static 'css/owl.theme.default.min.css' %}">
+        <!-- swiper css -->
+        <link rel="stylesheet" type="text/css" href="{%  static 'css/swiper-bundle.min.css' %}">
+        <!-- slick css -->
+        <link rel="stylesheet" type="text/css" href="{%  static 'css/slick.css' %}">
+        <!-- magnific-popup css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/magnific-popup.css' %}">
+        <!-- theme css -->
+        <link rel="stylesheet" type="text/css" href="{%  static 'css/main-1.css' %}">
+        <!-- style css -->
+        <link rel="stylesheet" type="text/css" href="{%  static 'css/style-1.css' %}">
+	</head>
+	<body>
+		<!-- top notification start -->
+{#		<section class="top-notification">#}
+{#			<div class="container-fluid">#}
+{#				<div class="row">#}
+{#					<div class="col">#}
+{#						<div class="notification-main">#}
+{#							<ul class="notification-ul"> #}
+{#								<li class="notification-li contact">#}
+{#									<div class="contact-block">#}
+{#										<div class="info-block">#}
+{#											<p class="label">Email :</p>#}
+{#											<a href="mailto:hotel78@gmail.com" class="link"> hotel78@gmail.com</a>#}
+{#										</div>#}
+{#										<div class="info-block">#}
+{#											<a href="pricing.html" class="link">Reservation</a>#}
+{#										</div>#}
+{#									</div>#}
+{#								</li>#}
+{#								<li class="notification-li offer-text">#}
+{#									<div class="text-block">#}
+{#										<p class="text">Enjoy specials packages and resort offers</p>#}
+{#									</div>#}
+{#								</li>#}
+{#								<li class="notification-li right-bar">#}
+{#									<ul class="right-bar-ul">#}
+{#										<li class="right-bar-li right-bar-link1 link-xs">#}
+{#											<a href="pricing.html"><span class="title">Reservation</span></a>#}
+{#										</li>#}
+{#										<li class="right-bar-li right-bar-link2">#}
+{#											<a href="room-grid.html"><span class="title">Hotel book</span></a>#}
+{#										</li>#}
+{#										<li class="right-bar-li right-bar-link3">#}
+{#											<a href="promotions.html"><span class="title">Holiday sale</span></a>#}
+{#										</li>#}
+{#										<li class="right-bar-li right-bar-link3">#}
+{#											<a href="login.html"><span class="title">Login</span></a>#}
+{#											<a href="create-account.html"><span class="title">Register</span></a>#}
+{#										</li>#}
+{#									</ul>#}
+{#								</li>#}
+{#							</ul>#}
+{#						</div>#}
+{#					</div>#}
+{#				</div>#}
+{#			</div>#}
+{#		</section>#}
+		<!-- top notification end -->
+		<!-- header start -->
+		<!-- header end -->
+		<!-- breadcrumb start -->
+		<section class="breadcrumb-area section-tb-padding" style="background-image: url('image/breadcrumb.jpg');">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="breadcrumb-block">
+							<div class="breadcrumb-link">
+								<a href="index.html" class="link">Home</a>
+								<span class="page-title">Create account</span>
+							</div>
+							<div class="section-capture">
+								<div class="section-title">
+									<h2>
+										<span>Create account</span>
+									</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- breadcrumb end -->
+		<!-- store content start -->
+		<main id="demo-content">
+			<!-- account area start -->
+			<section class="account-area section-tb-padding">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="account-block section-tb-padding">
+								<div class="section-capture wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
+									<div class="section-title">
+										<span class="subtitle">Please login below account</span>
+										<h2>
+											<span>Create account</span>
+										</h2>
+									</div>
+								</div>
+                                <div class="account-content">
+                  <form method="post">
+                                        {% csrf_token %}
+                    <ul class="account-content-ul">
+                      <li class="account-content-li wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
+                        <input type="text" name="username" class="input-full" placeholder="Enter your first name" autocomplete="off" required>
+                        <span class="input-icon"><i class="feather-user"></i></span>
+                      </li>
+                      <li class="account-content-li wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
+                        <input type="text" name="lastname" class="input-full" placeholder="Enter your last name" autocomplete="off" required>
+                        <span class="input-icon"><i class="feather-user-plus"></i></span>
+                      </li>
+                      <li class="account-content-li wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
+                        <input type="text" name="email" class="input-full" placeholder="Enter your email address" autocomplete="off" required>
+                        <span class="input-icon"><i class="feather-mail"></i></span>
+                      </li>
+                      <li class="account-content-li wow animate__animated animate__fadeIn" data-wow-delay="0.4s">
+                        <input type="password" name="password" class="input-full" placeholder="Enter your password" autocomplete="off" required>
+                        <span class="input-icon"><i class="feather-lock"></i></span>
+                      </li>
+                                            {{ error }}
+                      <li class="account-content-li wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+                        <button type="submit" class="account-btn btn-style">Create account</button>
+                      </li>
+                      <li class="account-content-li wow animate__animated animate__fadeIn" data-wow-delay="0.6s">
+                        <a href="/signin/" class="text-link">Login account</a>
+                      </li>
+                    </ul>
+                  </form>
+                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- account area end -->
+		</main>
+		<!-- store content end -->
+		<!-- footer start -->
+{% endblock %}
+<!-- Mirrored from spacingtech.com/html/hotel/hotel-ltr/create-account.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Feb 2025 14:14:29 GMT -->
+</html>

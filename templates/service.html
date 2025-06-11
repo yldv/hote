@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block content %}
+	
+<!-- Mirrored from spacingtech.com/html/hotel/hotel-ltr/service.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Feb 2025 14:18:15 GMT -->
+
+		<!-- header end -->
+		<!-- breadcrumb start -->
+		<section class="breadcrumb-area section-tb-padding" style="background-image: url('{% static 'image/breadcrumb.jpg' %}');">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="breadcrumb-block">
+							<div class="breadcrumb-link">
+								<a href="index.html" class="link">Home</a>
+								<span class="page-title">Service</span>
+							</div>
+							<div class="section-capture">
+								<div class="section-title">
+									<h2>
+										<span>Our services</span>
+									</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- breadcrumb end -->
+		<!-- store content start -->
+		<main id="demo-content">
+			<!-- service start -->
+			<section class="service-area section-tb-padding">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="service-area-main">
+								<div class="service-title">
+									<div class="section-capture">
+										<div class="section-title">
+											<span class="subtitle">We do our best to offer</span>
+											<h2>
+												<span>Giving the best just for</span>
+												<span>you hotel we experience</span>
+											</h2>
+										</div>
+									</div>
+									<div class="service-btn">
+										<a href="about.html" class="btn-style">More service</a>
+									</div>
+								</div>
+								<div class="service-block">
+									<ul class="service-block-ul">
+										<li class="service-block-li">
+											<div class="service-content">
+												<h4 class="title">Book a hotel service</h4>
+												<p class="desc">It is a long established fact that a reader will be distracted by !</p>
+											</div>
+										</li>
+										<li class="service-block-li">
+											<div class="service-content">
+												<h4 class="title">View hotel service</h4>
+												<p class="desc">It is a long established fact that a reader will be distracted by !</p>
+											</div>
+										</li>
+										<li class="service-block-li">
+											<div class="service-content">
+												<h4 class="title">Waiter prowide service</h4>
+												<p class="desc">It is a long established fact that a reader will be distracted by !</p>
+											</div>
+										</li>
+										<li class="service-block-li">
+											<div class="service-content">
+												<h4 class="title">Book a room service</h4>
+												<p class="desc">It is a long established fact that a reader will be distracted by !</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- service end -->
+			<!-- service video start -->
+			<section class="service-video-area section-b-padding">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="service-video">
+								<a href="image/popup-video/video.mp4" class="video-banner play-button large-opacity">
+									<img src="{% static 'image/services/service.jpg' %}" class="img-fluid" alt="image">
+								</a>
+								<a href="image/popup-video/video.mp4" class="video-btn play-button">
+									<span class="video-icon"><i class="feather-play"></i></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- service video end -->
+			<!-- service tab start -->
+			<section class="service-tab-area section-tb-padding">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="service-tab-block">
+								<div class="service-tab">
+									<ul class="nav nav-tabs">
+		                                <li class="nav-item">
+		                                    <a class="nav-link active" data-bs-toggle="tab" href="#restaurant">Restaurant & bar</a>
+		                                </li>
+		                                <li class="nav-item">
+		                                    <a class="nav-link" data-bs-toggle="tab" href="#wellness">Spa & wellness</a>
+		                                </li>
+		                                <li class="nav-item">
+		                                    <a class="nav-link" data-bs-toggle="tab" href="#meeting">Meeting room</a>
+		                                </li>
+		                                <li class="nav-item">
+		                                    <a class="nav-link" data-bs-toggle="tab" href="#fitness">Fitness room</a>
+		                                </li>
+		                            </ul>
+								</div>
+								<div class="tab-content">
+                                    {% for s in services %}
+									<div class="tab-pane fade show active" id="restaurant">
+										<div class="content-block">
+											<div class="tab-image-main">
+												<ul class="tab-image-ul">
+													<li class="tab-image-li">
+														<a href="javascript:void(0)" class="image small-opacity">
+															<img src="{{ s.r_image.url }}" class="img-fluid" alt="image">
+														</a>
+													</li>
+													<li class="tab-image-li">
+														<a href="javascript:void(0)" class="image small-opacity">
+															<img src="{{ s.r_image2.url }}" class="img-fluid" alt="image">
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="text-content">
+												<div class="tab-text-block">
+													<div class="section-capture">
+														<div class="section-title">
+															<span class="subtitle">These in turn provide hotel info</span>
+															<h2>
+																<span>{{ s.r_name }}</span>
+															</h2>
+														</div>
+													</div>
+													<div class="tab-service">
+														<ul class="tab-service-ul">
+															<li class="tab-service-li">
+																<div class="tab-service-block">
+																	<a href="javascript:void(0)" class="service-icon"><img src="{% static 'image/services/services-tab-icon-1.png' %}" class="img-fluid" alt="image"></a>
+																	<span class="service-title">Bech for enjoy</span>
+																</div>
+															</li>
+															<li class="tab-service-li">
+																<div class="tab-service-block">
+																	<a href="javascript:void(0)" class="service-icon"><img src="{% static 'image/services/services-tab-icon-2.png' %}" class="img-fluid" alt="image"></a>
+																	<span class="service-title">Movie time</span>
+																</div>
+															</li>
+															<li class="tab-service-li">
+																<div class="tab-service-block">
+																	<a href="javascript:void(0)" class="service-icon"><img src="{% static 'image/services/services-tab-icon-3.png' %}" class="img-fluid" alt="image"></a>
+																	<span class="service-title">Drinks</span>
+																</div>
+															</li>
+															<li class="tab-service-li">
+																<div class="tab-service-block">
+																	<a href="javascript:void(0)" class="service-icon"><img src="{% static 'image/services/services-tab-icon-4.png' %}" class="img-fluid" alt="image"></a>
+																	<span class="service-title">Playground</span>
+																</div>
+															</li>
+														</ul>
+													</div>
+													<div class="service-btn">
+														<a href="/room/" class="btn-style">Read more</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="wellness">
+										<div class="content-block">
+											<div class="tab-image-main">
+												<ul class="tab-image-ul">
+													<li class="tab-image-li">
+														<a href="javascript:void(0)" class="image small-opacity">
+															<img src="{{ s.s_image.url }}" class="img-fluid" alt="image">
+														</a>
+													</li>
+													<li class="tab-image-li">
+														<a href="javascript:void(0)" class="image small-opacity">
+															<img src="{{ s.s_image2.url }}" class="img-fluid" alt="image">
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="text-content">
+												<div class="tab-text-block">
+													<div class="section-capture">
+														<div class="section-title">
+															<span class="subtitle">These in turn provide hotel info</span>
+															<h2>
+																<span>{{ s.s_name }}</span>
+															</h2>
+														</div>
+													</div>
+													<div class="tab-service">
+														<ul class="tab-service-ul">
+															<li class="tab-service-li">
+																<div class="tab-service-block">
+																	<a href="javascript:void(0)" class="service-icon"><img src="{% static 'image/services/services-tab-icon-1.png' %}" class="img-fluid" alt="image"></a>
+																	<span class="service-title">Bech for enjoy</span>
+																</div>
+															</li>
+															<li class="tab-service-li">
+																<div class="tab-service-block">
+																	<a href="javascript:void(0)" class="service-icon"><img src="{% static 'image/services/services-tab-icon-2.png' %}" class="img-fluid" alt="image"></a>
+																	<span class="service-title">Movie time</span>
+																</div>
+															</li>
+															<li class="tab-service-li">
+																<div class="tab-service-block">
+																	<a href="javascript:void(0)" class="service-icon"><img src="{% static 'image/services/services-tab-icon-3.png' %}" class="img-fluid" alt="image"></a>
+																	<span class="service-title">Drinks</span>
+																</div>
+															</li>
+															<li class="tab-service-li">
+																<div class="tab-service-block">
+																	<a href="javascript:void(0)" class="service-icon"><img src="{% static 'image/services/services-tab-icon-4.png' %}" class="img-fluid" alt="image"></a>
+																	<span class="service-title">Playground</span>
+																</div>
+															</li>
+														</ul>
+													</div>
+													<div class="service-btn">
+														<a href="/room/" class="btn-style">Read more</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="meeting">
+										<div class="content-block">
+											<div class="tab-image-main">
+												<ul class="tab-image-ul">
+													<li class="tab-image-li">
+														<a href="javascript:void(0)" class="image small-opacity">
+															<img src="{{ s.m_image.url }}" class="img-fluid" alt="image">
+														</a>
+													</li>
+													<li class="tab-image-li">
+														<a href="javascript:void(0)" class="image small-opacity">
+															<img src="{{ s.m_image2.url }}" class="img-fluid" alt="image">
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="text-content">
+												<div class="tab-text-block">
+													<div class="section-capture">
+														<div class="section-title">
+															<span class="subtitle">These in turn provide hotel info</span>
+															<h2>
+																<span>{{ s.m_name }}</span>
+															</h2>
+														</div>
+													</div>
+													<div class="tab-service">
+														<ul class="tab-service-ul">
+															<li class="tab-service-li">
+																<div class="tab-service-block">
+																	<a href="javascript:void(0)" class="service-icon"><img src="{% static 'image/services/services-tab-icon-1.png' %}" class="img-fluid" alt="image"></a>
+																	<span class="service-title">Bech for enjoy</span>
+																</div>
+															</li>
+															<li class="tab-service-li">
+																<div class="tab-service-block">
+																	<a href="javascript:void(0)" class="service-icon"><img src="{% static 'image/services/services-tab-icon-2.png' %}" class="img-fluid" alt="image"></a>
+																	<span class="service-title">Movie time</span>
+																</div>
+															</li>
+															<li class="tab-service-li">
+																<div class="tab-service-block">
+																	<a href="javascript:void(0)" class="service-icon"><img src="{% static 'image/services/services-tab-icon-3.png' %}" class="img-fluid" alt="image"></a>
+																	<span class="service-title">Drinks</span>
+																</div>
+															</li>
+															<li class="tab-service-li">
+																<div class="tab-service-block">
+																	<a href="javascript:void(0)" class="service-icon"><img src="{% static 'image/services/services-tab-icon-4.png' %}" class="img-fluid" alt="image"></a>
+																	<span class="service-title">Playground</span>
+																</div>
+															</li>
+														</ul>
+													</div>
+													<div class="service-btn">
+														<a href="/room/" class="btn-style">Read more</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="fitness">
+										<div class="content-block">
+											<div class="tab-image-main">
+												<ul class="tab-image-ul">
+													<li class="tab-image-li">
+														<a href="javascript:void(0)" class="image small-opacity">
+															<img src="{{ s.f_image.url }}" class="img-fluid" alt="image">
+														</a>
+													</li>
+													<li class="tab-image-li">
+														<a href="javascript:void(0)" class="image small-opacity">
+															<img src="{{ s.f_image2.url }}" class="img-fluid" alt="image">
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="text-content">
+												<div class="tab-text-block">
+													<div class="section-capture">
+														<div class="section-title">
+															<span class="subtitle">These in turn provide hotel info</span>
+															<h2>
+																<span>{{ s.f_name }}</span>
+															</h2>
+														</div>
+													</div>
+													<div class="tab-service">
+														<ul class="tab-service-ul">
+															<li class="tab-service-li">
+																<div class="tab-service-block">
+																	<a href="javascript:void(0)" class="service-icon"><img src="{% static 'image/services/services-tab-icon-1.png' %}" class="img-fluid" alt="image"></a>
+																	<span class="service-title">Bech for enjoy</span>
+																</div>
+															</li>
+															<li class="tab-service-li">
+																<div class="tab-service-block">
+																	<a href="javascript:void(0)" class="service-icon"><img src="{% static 'image/services/services-tab-icon-2.png' %}" class="img-fluid" alt="image"></a>
+																	<span class="service-title">Movie time</span>
+																</div>
+															</li>
+															<li class="tab-service-li">
+																<div class="tab-service-block">
+																	<a href="javascript:void(0)" class="service-icon"><img src="{% static 'image/services/services-tab-icon-3.png' %}" class="img-fluid" alt="image"></a>
+																	<span class="service-title">Drinks</span>
+																</div>
+															</li>
+															<li class="tab-service-li">
+																<div class="tab-service-block">
+																	<a href="javascript:void(0)" class="service-icon"><img src="{% static 'image/services/services-tab-icon-4.png' %}" class="img-fluid" alt="image"></a>
+																	<span class="service-title">Playground</span>
+																</div>
+															</li>
+														</ul>
+													</div>
+													<div class="service-btn">
+														<a href="/room/" class="btn-style">Read more</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+                                    {% endfor %}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- service tab end -->
+			<!-- date selector start -->
+			<!-- date selector end -->
+			<!-- testimonial start -->
+			<section class="testimonial-area section-tb-padding">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="section-capture">
+								<div class="section-title">
+									<span class="subtitle">200+ Positive clients reviews</span>
+									<h2>
+										<span>Our latest customer</span>
+										<span>love for hotel reviews</span>
+									</h2>
+								</div>
+							</div>
+							<div class="swiper" id="testimonial-slider">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide wow animate__animated animate__zoomIn" data-wow-delay="0.1s">
+										<div class="testimonial-block">
+											<div class="testimonial-icon">
+												<img src="{% static 'image/home-1/test-icon.png' %}' class="img-fluid" alt="image">
+											</div>
+											<div class="testimonial-content">
+												<p class="desc">There are many variations of passages of but the majority have suffered alteration a by injected humour, or randomised.</p>
+												<div class="testi-author">
+													<div class="image">
+														<img src="{% static 'image/home-1/test-1.png' %}" class="img-fluid" alt="image">
+													</div>
+													<div class="author">
+														<span class="author-name">Aida bugg</span>
+														<span class="author-bio">Store customer</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide wow animate__animated animate__zoomIn" data-wow-delay="0.2s">
+										<div class="testimonial-block">
+											<div class="testimonial-icon">
+												<img src="{% static 'image/home-1/test-icon.png' %}" class="img-fluid" alt="image">
+											</div>
+											<div class="testimonial-content">
+												<p class="desc">There are many variations of passages of but the majority have suffered alteration a by injected humour, or randomised.</p>
+												<div class="testi-author">
+													<div class="image">
+														<img src="{% static 'image/home-1/test-2.png' %}" class="img-fluid" alt="image">
+													</div>
+													<div class="author">
+														<span class="author-name">Del phineum</span>
+														<span class="author-bio">Store owner</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide wow animate__animated animate__zoomIn" data-wow-delay="0.3s">
+										<div class="testimonial-block">
+											<div class="testimonial-icon">
+												<img src="{% static 'image/home-1/test-icon.png' %}" class="img-fluid" alt="image">
+											</div>
+											<div class="testimonial-content">
+												<p class="desc">There are many variations of passages of but the majority have suffered alteration a by injected humour, or randomised.</p>
+												<div class="testi-author">
+													<div class="image">
+														<img src="{% static 'image/home-1/test-3.png' %}" class="img-fluid" alt="image">
+													</div>
+													<div class="author">
+														<span class="author-name">Percy kewshun</span>
+														<span class="author-bio">Store customer</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide wow animate__animated animate__zoomIn" data-wow-delay="0.4s">
+										<div class="testimonial-block">
+											<div class="testimonial-icon">
+												<img src="{% static 'image/home-1/test-icon.png' %}" class="img-fluid" alt="image">
+											</div>
+											<div class="testimonial-content">
+												<p class="desc">There are many variations of passages of but the majority have suffered alteration a by injected humour, or randomised.</p>
+												<div class="testi-author">
+													<div class="image">
+														<img src="{% static 'image/home-1/test-4.png' %}" class="img-fluid" alt="image">
+													</div>
+													<div class="author">
+														<span class="author-name">Aida bugg</span>
+														<span class="author-bio">Store customer</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- testimonial end -->
+		</main>
+		<!-- store content end -->
+</html>
+{% endblock %}

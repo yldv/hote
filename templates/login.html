@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% extends 'layouts/base.html' %}
+<html lang="en">
+{% block content %}
+<!-- Mirrored from spacingtech.com/html/hotel/hotel-ltr/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Feb 2025 14:14:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+	<body>
+		<!-- top notification start -->
+		<!-- top notification end -->
+		<!-- header start -->
+		<!-- header end -->
+		<!-- breadcrumb start -->
+		<section class="breadcrumb-area section-tb-padding" style="background-image: url('image/breadcrumb.jpg');">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="breadcrumb-block">
+							<div class="breadcrumb-link">
+								<a href="/" class="link">Home</a>
+								<span class="page-title">Login</span>
+							</div>
+							<div class="section-capture">
+								<div class="section-title">
+									<h2>
+										<span>Login</span>
+									</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- breadcrumb end -->
+		<!-- store content start -->
+		<main id="demo-content">
+			<!-- account area start -->
+			<section class="login-area section-tb-padding">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="login-block section-tb-padding">
+								<div class="section-capture wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
+									<div class="section-title">
+										<span class="subtitle">Please login below account</span>
+										<h2>
+											<span>Login account</span>
+										</h2>
+									</div>
+								</div>
+<div class="login-content">
+                  <form method="post">
+                                        {% csrf_token %}
+                    <ul class="login-content-ul">
+                      <li class="login-content-li wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
+                        <input type="text" name="username" class="input-full" placeholder="Enter your name" autocomplete="off" required>
+                        <span class="input-icon"><i class="feather-mail"></i></span>
+                      </li>
+                      <li class="login-content-li wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
+                        <input type="password" name="password" class="input-full" placeholder="Enter your password" autocomplete="off" required>
+                        <span class="input-icon"><i class="feather-lock"></i></span>
+                      </li>
+                                            {{ error }}
+                      <li class="login-content-li wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
+                        <button href="/login/" type="submit" class="login-btn btn-style">Sign in</button>
+                      </li>
+                      <li class="login-content-li link-block wow animate__animated animate__fadeIn" data-wow-delay="0.4s">
+                        <a href="/forgot/" class="text-link link-1">Forgot your password ?</a>
+                        <a href="/signup/" class="text-link link-2">Create account</a>
+                      </li>
+                    </ul>
+                  </form>
+                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- account area end -->
+		</main>
+		<!-- store content end -->
+		<!-- footer start -->
+
+{% endblock %}
+</html>
